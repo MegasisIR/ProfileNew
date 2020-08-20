@@ -12,6 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox androidDevelopmentCb, deepLearningCh, uiDesignCh;
     private RadioGroup radioGroup;
     private RadioButton ghachsaranRb, tehranRb, shirazRb;
+
+    public static final int REQUEST_CODE = 1412;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         ghachsaranRb = findViewById(R.id.rb_main_yasoj);
         tehranRb = findViewById(R.id.rb_main_tehran);
         shirazRb = findViewById(R.id.rb_main_fars);
-
 
 
         androidDevelopmentCb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -65,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -77,14 +78,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+/*******************************************Intents************************************************************/
         viewWebSiteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("7learn.com"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://7learn.ac"));
                 startActivity(intent);
             }
         });
 
+        editProfileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, EditFullNameActivity.class);
+                intent.putExtra("name", fullNameTv.getText().toString().length()>0?fullNameTv.getText().toString():"");
+                startActivityForResult(intent, REQUEST_CODE);
+            }
+        });
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (data != null && RESULT_OK == resultCode && requestCode == REQUEST_CODE){
+            fullNameTv.setText(data.getStringExtra("name"));
+        }
     }
 }
