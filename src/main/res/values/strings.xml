@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">View Profile</string>
+    <string name="skills">Skills</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="view_website">View Website</string>
+    <string name="android_development">Android Development</string>
+    <string name="ui_design">Ui Design</string>
+    <string name="deep_learning">Deep Learning</string>
+    <string name="province_city">Province, City</string>
+    <string name="gachsaran">Yasoj, Gachsaran</string>
+    <string name="tehran">Tehran, Tehran</string>
+    <string name="shiraz">Fars, Shiraz</string>
+    <string name="save_information">Save Information</string>
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/toolbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="@string/app_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar_profile"
+        android:id="@+id/main_scroll"
+        android:layout_above="@id/btn_main_save"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_main_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_profile" />
+
+            <TextView
+                android:id="@+id/tv_main_fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/iv_main_avatar"
+                app:layout_constraintStart_toStartOf="@+id/iv_main_avatar"
+                app:layout_constraintTop_toBottomOf="@+id/iv_main_avatar"
+                tools:text="Mehrdad tbesh" />
+
+            <TextView
+                android:id="@+id/tv_main_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/skills"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/btn_main_viewWebsite" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="27dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_main_androidDevelopment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/android_development"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_main_skills" />
+
+            <CheckBox
+                android:id="@+id/checkBox_main_uiDesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ui_design"
+                app:layout_constraintStart_toStartOf="@+id/checkBox_main_androidDevelopment"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_main_androidDevelopment" />
+
+            <CheckBox
+                android:id="@+id/checkBox_main_deepLearning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deep_learning"
+                app:layout_constraintStart_toStartOf="@+id/checkBox_main_uiDesign"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_main_uiDesign" />
+
+            <TextView
+                android:id="@+id/tv_main_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/province_city"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_main_deepLearning" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_cities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_main_province">
+
+                <RadioButton
+                    android:id="@+id/rb_main_yasoj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gachsaran" />
+
+                <RadioButton
+                    android:id="@+id/rb_main_tehran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tehran" />
+
+                <RadioButton
+                    android:id="@+id/rb_main_fars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shiraz" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_main_viewWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shae_background_view_website"
+                android:padding="10dp"
+                android:text="@string/view_website"
+                android:textAllCaps="false"
+                android:textColor="#eeee"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btn_main_editProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_main_editProfile" />
+
+
+            <Button
+                android:id="@+id/btn_main_editProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/shae_background_edittext"
+                android:padding="10dp"
+                android:text="@string/edit_profile"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@+id/btn_main_viewWebsite"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_main_fullName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_main_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shae_background_edittext"
+        android:text="@string/save_information"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+       android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
