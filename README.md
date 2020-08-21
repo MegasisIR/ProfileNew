@@ -11,4 +11,4 @@
 6. شهر محل زندگی کاربر 
 
 -- تصاویر
-!(edit.png)
+![پروفایل](https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png?raw=true "تصاویر")
