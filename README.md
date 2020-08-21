@@ -10,4 +10,4 @@
 5. مهارت های کاربر 
 6. شهر محل زندگی کاربر 
 
-![پروفایل](https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png?raw=true|width=200x)
+![پروفایل](https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png =200x200)
