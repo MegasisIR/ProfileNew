@@ -11,3 +11,4 @@
 6. شهر محل زندگی کاربر 
 
 ![پروفایل](https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png =200x200)
+<img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png" alt="drawing" style="width:200px;"/>
