@@ -12,5 +12,5 @@
 
 
 <div style="margin:0 auto;padding:15px;display:inline-block">
-  <img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/profile.png" style="padding:15px;display:inline-block" alt="drawing" width="400px" height="800px" margin="10px"/><img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png"style="padding:15px;display:inline-block" alt="drawing" width="400px" height="800px" margin="10px"/>
+  <img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/profile.png" style="padding:15px;display:inline-block" alt="drawing" width="400px" height="800px" margin="10px"/><img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png" style="float:right" alt="drawing" width="400px" height="800px" margin="10px"/>
 </div>
