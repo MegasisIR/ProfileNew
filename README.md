@@ -11,4 +11,4 @@
 6. شهر محل زندگی کاربر 
 
 -- تصاویر
-![پروفایل](https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png?raw=true =200x"تصاویر")
+![پروفایل](https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png?raw=true "تصاویر"){:height="300px" width="150px"}
