@@ -46,7 +46,12 @@ public class MainActivity extends AppCompatActivity {
         androidDevelopmentCb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    Toast.makeText(buttonView.getContext(), "Android Development Checked", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(buttonView.getContext(), "Android Development Uncheck", Toast.LENGTH_SHORT).show();
 
+                }
             }
         });
 
@@ -54,7 +59,12 @@ public class MainActivity extends AppCompatActivity {
         uiDesignCh.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    Toast.makeText(buttonView.getContext(), "UI Design Checked", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(buttonView.getContext(), "UI Design Uncheck", Toast.LENGTH_SHORT).show();
 
+                }
             }
         });
 
@@ -62,7 +72,12 @@ public class MainActivity extends AppCompatActivity {
         deepLearningCh.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    Toast.makeText(buttonView.getContext(), "Deep Learning Checked", Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(buttonView.getContext(), "Deep Learning Uncheck", Toast.LENGTH_SHORT).show();
 
+                }
             }
         });
 
@@ -74,6 +89,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.rb_main_fars:
                         Toast.makeText(group.getContext(), "shiraz checked", Toast.LENGTH_SHORT).show();
                         break;
+                    case R.id.rb_main_tehran:
+                        Toast.makeText(group.getContext(), "tehran checked", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.rb_main_yasoj:
+                        Toast.makeText(group.getContext(), "yasoj checked", Toast.LENGTH_SHORT).show();
+                        break;
+                    default:
+                        return;
                 }
             }
         });
@@ -92,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(MainActivity.this, EditFullNameActivity.class);
-                intent.putExtra("name", fullNameTv.getText().toString().length()>0?fullNameTv.getText().toString():"");
+                intent.putExtra("name", fullNameTv.getText().toString().length() > 0 ? fullNameTv.getText().toString() : "");
                 startActivityForResult(intent, REQUEST_CODE);
             }
         });
@@ -103,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (data != null && RESULT_OK == resultCode && requestCode == REQUEST_CODE){
+        if (data != null && RESULT_OK == resultCode && requestCode == REQUEST_CODE) {
             fullNameTv.setText(data.getStringExtra("name"));
         }
     }
