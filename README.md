@@ -28,7 +28,7 @@
 <pre dir="rtl">
 2. ضمنیImplicit Intents
 </pre>
-<code>
+<pre>
  
   viewWebSiteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,5 +37,5 @@
                 startActivity(intent);
             }
         });
-<code>
+<pre>
 
