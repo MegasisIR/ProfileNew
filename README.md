@@ -18,3 +18,20 @@
  
  <img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png" style="float:right" alt="drawing" width="400px" height="800px" margin="10px"/>
 </div>
+<pre dir="rtl">
+نکته ای  مفید  این پروژه شاید استفاده از  دو نوع intent باشد
+1.صریح Explicit Intents
+<code dir="ltr">
+
+</code>
+2. ضمنیImplicit Intents
+<code dir="ltr">
+ 
+  viewWebSiteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("7learn.com"));
+                startActivity(intent);
+            }
+        });
+</code>
