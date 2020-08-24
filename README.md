@@ -16,6 +16,7 @@
 <div style="margin:0 auto;padding:15px;display:inline-block" dir="rtl">
  <img src="https://github.com/MehrdadTabesh/ProfileNew/raw/master/profile.png" alt="drawing" width="400px" height="800px" style="max-width:100%;float: right;">
  
+ 
  <img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png" style="float:right" alt="drawing" width="400px" height="800px" margin="10px"/>
 </div>
 <pre dir="rtl">
@@ -26,24 +27,21 @@
 editProfileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-</pre
-        <code color="red">Intent intent = new Intent(MainActivity.this, EditFullNameActivity.class);</code><pre>
+                Intent intent = new Intent(MainActivity.this, EditFullNameActivity.class);
                 intent.putExtra("name", fullNameTv.getText().toString().length() > 0 ? fullNameTv.getText().toString() : "");
                 startActivityForResult(intent, REQUEST_CODE);
             }
         });
-
 </pre>
 <pre dir="rtl">
 2. ضمنیImplicit Intents
 </pre>
 <pre>
- 
   viewWebSiteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {</pre>
-         <code color="red">Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("7learn.com"));</code>
-     <pre>           startActivity(intent);
+            public void onClick(View v) {
+            Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("7learn.com"));
+            startActivity(intent);
             }
         });
 <pre>
