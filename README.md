@@ -18,7 +18,7 @@
  
  <img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png" style="float:right" alt="drawing" width="400px" height="800px" margin="10px"/>
 </div>
-<pre dir="rtl">
+<div dir="rtl">
 نکته ای  مفید  این پروژه شاید استفاده از  دو نوع intent باشد
 1.صریح Explicit Intents
 <code dir="ltr">
@@ -35,3 +35,4 @@
             }
         });
 </code>
+</div>
