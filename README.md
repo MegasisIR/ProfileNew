@@ -18,14 +18,17 @@
  
  <img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png" style="float:right" alt="drawing" width="400px" height="800px" margin="10px"/>
 </div>
-<code dir="rtl">
+<pre dir="rtl">
 نکته ای  مفید  این پروژه شاید استفاده از  دو نوع intent باشد
 1.صریح Explicit Intents
+</pre>
 <code dir="ltr">
 
 </code>
+<pre dir="rtl">
 2. ضمنیImplicit Intents
-<code dir="ltr">
+</pre>
+<code>
  
   viewWebSiteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,5 +37,5 @@
                 startActivity(intent);
             }
         });
-</code>
-</code>
+<code>
+
