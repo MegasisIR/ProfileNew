@@ -12,5 +12,7 @@
 
 
 <div style="margin:0 auto;padding:15px;display:inline-block">
- <img src="https://github.com/MehrdadTabesh/ProfileNew/raw/master/profile.png" alt="drawing" width="400px" height="800px" style="max-width:100%;float: right;"><img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png" style="float:right" alt="drawing" width="400px" height="800px" margin="10px"/>
+ <img src="https://github.com/MehrdadTabesh/ProfileNew/raw/master/profile.png" alt="drawing" width="400px" height="800px" style="max-width:100%;float: right;">
+ 
+ <img src="https://github.com/MehrdadTabesh/ProfileNew/blob/master/edit.png" style="float:right" alt="drawing" width="400px" height="800px" margin="10px"/>
 </div>
