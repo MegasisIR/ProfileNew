@@ -1,4 +1,5 @@
 # ProfileNew
+<pre style="direction: rtl;">
 این پروژه یک تمرین آموزشی برای آشنایی با ویو گروپ های می باشد
 
 ویژگی های این تمرین 
@@ -10,6 +11,7 @@
 5. مهارت های کاربر 
 6. شهر محل زندگی کاربر 
 
+</pre>
 
 <div style="margin:0 auto;padding:15px;display:inline-block">
  <img src="https://github.com/MehrdadTabesh/ProfileNew/raw/master/profile.png" alt="drawing" width="400px" height="800px" style="max-width:100%;float: right;">
