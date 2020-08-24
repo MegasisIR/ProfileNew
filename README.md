@@ -1,5 +1,5 @@
 # ProfileNew
-<pre style="direction: rtl;">
+<pre style="direction: rtl;" direction="rtl">
 این پروژه یک تمرین آموزشی برای آشنایی با ویو گروپ های می باشد
 
 ویژگی های این تمرین 
