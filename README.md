@@ -22,9 +22,18 @@
 نکته ای  مفید  این پروژه شاید استفاده از  دو نوع intent باشد
 1.صریح Explicit Intents
 </pre>
-<code dir="ltr">
+<pre dir="ltr">
+editProfileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-</code>
+                Intent intent = new Intent(MainActivity.this, EditFullNameActivity.class);
+                intent.putExtra("name", fullNameTv.getText().toString().length() > 0 ? fullNameTv.getText().toString() : "");
+                startActivityForResult(intent, REQUEST_CODE);
+            }
+        });
+
+</pre>
 <pre dir="rtl">
 2. ضمنیImplicit Intents
 </pre>
