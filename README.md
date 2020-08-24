@@ -27,7 +27,7 @@ editProfileBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-        <pre color="red">        Intent intent = new Intent(MainActivity.this, EditFullNameActivity.class);</pre
+        <code color="red">        Intent intent = new Intent(MainActivity.this, EditFullNameActivity.class);</code>
                 intent.putExtra("name", fullNameTv.getText().toString().length() > 0 ? fullNameTv.getText().toString() : "");
                 startActivityForResult(intent, REQUEST_CODE);
             }
@@ -42,7 +42,7 @@ editProfileBtn.setOnClickListener(new View.OnClickListener() {
   viewWebSiteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-         <pre color="red">        Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("7learn.com"));</pre>
+         <code color="red">        Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("7learn.com"));</code>
                 startActivity(intent);
             }
         });
